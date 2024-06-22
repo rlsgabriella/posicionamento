@@ -3,34 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Posicionamento</title>
-<style>
-div, p ,h1{
-    background-color: aqua
-}
+    <style>
+       
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
 
-span, a, strong{
-    background-color: blueviolet
-}
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("https://cdn.dribbble.com/users/7361011/screenshots/15363487/media/22cf00ecf250d4b0045a5ccbd0307bc3.jpg?compress=1&resize=1600x1200&vertical=top");
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 0, 0);  
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-button{
-    background-color: green
+        .nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
 
-}
-</style>    
+        .nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            margin-left: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .title {
+            color: aliceblue;
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input-group {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .input-group input[type="text"] {
+            padding-right: 2.5rem;
+            padding-left: 1rem;
+            height: 2.5rem;
+            border-radius: 30px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .input-group .bi {
+            font-size: 1.2rem;
+            position: absolute;
+            right: 10px;
+            color: red;
+            cursor: pointer;
+        }
+
+        h6 {
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 0;
+        }
+
+        .text-center {
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+            padding: 0 20px;
+        }
+
+        .message {
+            color: white;
+            margin-top: 10px;
+            font-size: 1rem;
+            text-align: center;
+        }
+    </style>    
 </head>
 <body>
- <!--Display  block-->   
- <div style="width: 50%; text-align:center;">Display block</div>
- <p style="text-align:center">Display block</p>
- <h1>Display block</h1>
-
- <!--Display inline -->
-<span>Display inline</span>
-<a href="">Display inline</a>
-<strong>Display inline</strong>
-<!--Display inline block-->
-<button>Botão</button>
-
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li>Account</li>
+                <li>Sign In</li>
+            </ul>
+        </div>
+        <div class="title">
+            <p>DOORDASH</p>  
+        </div>
+        <div class="text-center">
+            <h6>
+               Restaurants and more,
+               delivered to your door
+            </h6>
+        </div>
+        <div class="form">
+            <div class="input-group">
+                <input type="text" placeholder="Digite aqui" />
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </div>
+        </div>
+        <div class="message">
+            <p>
+              Restaurants for you
+            </p>
+        </div>
+    </div>
 </body>
 </html>
