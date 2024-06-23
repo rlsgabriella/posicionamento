@@ -9,41 +9,55 @@
             margin: 0%;
         }
 .topo{
-    background-color: rgb(148, 32, 32);
+    background-color: rgb(181, 30, 30);
     display: flex;
     align-items:center ;
     height: 180px;  
     flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .topo2{
-    background-color: rgb(149, 33, 33);
+    background-color: rgb(181, 30, 30);
     display: flex;
     justify-content: flex-end;
-    font-size: 10px;
+    font-size: 15px;
 }
 .caixa de texto{
-            width: 150px; /* Define a largura da caixa de texto */
+            width: 100px; /* Define a largura da caixa de texto */
             height: 30px; /* Define a altura da caixa de texto */
             padding: 5px; /* Define o padding interno da caixa de texto */
             font-size: 14px; /* Define o tamanho da fonte dentro da caixa de texto */
         }
+        .caixa-de-busca {
+            display: flex; /* Utiliza flexbox para alinhar os elementos */
+            justify-content: center; /* Centraliza os elementos */
+            align-items: center; /* Alinha os elementos verticalmente */
+            margin-top: 20px;
+        }
+
+        .input-busca {
+            width: 200px; /* Largura da caixa de busca */
+            padding: 10px; /* Espaçamento interno */
+            font-size: 16px; /* Tamanho da fonte */
+            border: 2px solid #ccc; /* Borda da caixa de busca */
+            border-radius: 4px 0 0 4px; /* Bordas arredondadas */
+        }
+
         .fundodebaixo{
             display: flex;
             background-color: rgb(47, 45, 45);
             width: 100%;
-            height: 400px;
+            height: 300px;
+            padding-bottom: 0%;
         }
         .txtfinal{
             display: flex;
-            flex-direction: column;
-        
-        }
-        .images{
-            display: flex;
-            flex-direction: row;
-            gap: 60px;
             align-items: center;
+            justify-content:space-between
+            color: white;
+            padding: 40px 20px;
         }
+        
     </style>
 </head>
 <body>
@@ -52,39 +66,31 @@
         Sign In Sign Up
     </div>
     <div class="topo"; style="color:white">
-    RLSFOOD
-    <p class="caixa-de-texto">
-        <input type="text" placeholder="Busque seu endereço">
-    </p>   
+       RLSFOOD
+    <div class="caixa-de-busca">
+        <input type="text" class="input-busca" placeholder="Digite sua busca...">
+        <button class="botao-busca">Buscar</button>
+    </div> 
     <h2>
         Restaurante + delivery
     </h2>
     </div>
 
     <div class="images">
-        <img src="https://bloximages.chicago2.vip.townnews.com/dailyitem.com/content/tncms/assets/v3/editorial/c/33/c33630cc-a42f-11ed-ba70-43952730e96d/63ddbc585ee5b.image.jpg?resize=400%2C353
-        " width="200" />
-        <img src="https://i.pinimg.com/474x/ef/13/c5/ef13c595df40e875b86e81dd94c9635e.jpg" width="200" />
-        <img src="https://c8.alamy.com/compfr/2r4t5f8/livreur-sur-le-vecteur-de-scooter-2r4t5f8.jpg"; width="80px">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_s4rPgXwV1I0G_iszT7gYNDoiwE_fT_sxgw&s" width="250" />
+
+        <img src="https://s2-ge.glbimg.com/yjcPVlzjDbjjR7-IchbdJFLIbao=/0x0:1254x836/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/3/3/92w4EYREyRINApxl77eQ/suco-frutas.jpg" width="250" />
+        <img src="https://thumbs.dreamstime.com/b/panqueca-feita-de-aveia-com-iogurte-e-recheada-alface-tomate-filetes-galinha-caf%C3%A9-da-manh%C3%A3-saud%C3%A1vel-sobre-fundo-branco-fechar-183782587.jpg"; width="250px">
 
     </div>
 <h4>
-    Comer comer
+    Comer, comer
     é o melhor para poder crescer!
 </h4>
 <div class="fundodebaixo"; style="color:white ;">   
     <div class="txtfinal">
-       <ul>
-        <li>Saladas</li>
-       <li>Snacks</li>
-       <li>Panquecas</li>
-       <li>Sucos</li>
-       </ul>
+    Salada Snacks  Panquecas Sucos
     </div>
 </div>
-
-
-
-
 </body>
 </html>
